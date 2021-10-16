@@ -1,4 +1,4 @@
-/*  font-family: Abel  */
+
 @font-face {
     font-family: Abel;
     src: url('../fonts/Abel/Abel-Regular.ttf');
@@ -26,4 +26,5 @@
 @font-face {
     font-family: Livvic;
     src: url('../fonts/Livvic/Livvic-Regular.ttf');
+
 }
