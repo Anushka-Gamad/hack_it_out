@@ -2,19 +2,19 @@ html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: linear-gradient(to right, #d4f4ec, #99d4e9);
 }
-
 :root{
 
     /*      Theme colors        */
-    --text-gray: #3f4954;
-    --text-light : #686666da;
+    --text-gray: #282d33;
+    --text-light : #1a1919da;
     --bg-color: #0f0f0f;
-    --white: #ffffff;
-    --midnight: #104f55;
+    --white: #ddbf61;
+    --midnight: white;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --sky: linear-gradient(120deg, #cdeaf7 0%, #fee5d5 100%);
 
     /*      theme font-family   */
     --Abel: 'Abel', cursive;
@@ -25,7 +25,6 @@ html, body{
 }
 
 
-/* ---------------- Global Classes ---------------*/
 
 a{
     text-decoration: none;
@@ -83,12 +82,10 @@ p{
     color: var(--text-light);
 }
 
-/* ------x------- Global Classes -------x-------*/
 
-/* --------------- navbar ----------------- */
 
 .nav{
-    background: white;
+    background: #fdcba5;
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
@@ -164,16 +161,11 @@ p{
     color: #a1c4cf;
 }
 
-/* -------x------- navbar ---------x------- */
 
-
-/* ----------------- Main Content----------- */
-
-/* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/Background-image.png');
+    background: url("https://wallpaperaccess.com/full/979151.jpg");
     background-size: cover;
-    height: 110vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
 }
@@ -199,18 +191,9 @@ main .site-title .btn:hover{
     color: var(--white);
 }
 
-/* --------x------ Site title --------x------- */
 
-/* --------------- Blog Carousel ------------ */
 
-main .blog{
-    background: url('../assets/Abract01.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 100vh;
-    width: 100%;
-    background-size: 65%;
-}
+
 
 main .blog .blog-post{
     padding-top: 6rem;
@@ -223,6 +206,7 @@ main .blog-post .blog-content{
     width: 80%;
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    background: #fdcba5;
 }
 
 main .blog-content .blog-title{
@@ -263,9 +247,7 @@ section .container .owl-nav{
 }
 
 
-/* -------x------- Blog Carousel -----x------ */
 
-/* ---------------- Site Content ----------------*/
 
 main .site-content{
     display: grid;
@@ -337,10 +319,7 @@ main .post-content .post-title a{
     color: var(--white);
 }
 
-/* -------x-------- Site Content --------x-------*/
 
-
-/* --------------- Sidebar ----------------------- */
 
 .site-content > .sidebar .category-list{
     font-family: var(--Livvic);   
@@ -362,6 +341,7 @@ main .post-content .post-title a{
 
 .site-content .sidebar .popular-post .post-content{
     padding: 1rem 0;
+    background: linear-gradient(120deg, #cdeaf7 0%, #fee5d5 100%);
 }
 
 .site-content .sidebar .popular-post h2{
@@ -415,16 +395,11 @@ main .post-content .post-title a{
 }
 
 
-/* -------x------- Sidebar -----------x----------- */
 
-/* ---------x------- Main Content -----x----- */
-
-
-/* ----------------- Footer --------------------- */
 
 footer.footer{
     height: 100%;
-    background: var(--bg-color);
+    background:#fdcba5; 
     position: relative;
 }
 
@@ -440,11 +415,11 @@ footer.footer .container > div{
 }
 
 footer.footer .container h2{
-    color: var(--white);
+    color: black;
 }
 
 footer.footer .newsletter .form-element{
-    background: black;
+    background: white;
     display: inline-block;
 }
 
@@ -452,7 +427,7 @@ footer.footer .newsletter .form-element input{
     padding: .5rem .7rem;
     border: none;
     background: transparent;
-    color: white;
+    color: black;
     font-family: var(--Josefin);
     font-size: 1rem;
     width: 74%;
@@ -472,7 +447,7 @@ footer.footer .instagram div > img{
 }
 
 footer.footer .follow div i{
-    color: var(--white);
+    color: black;
     padding: 0 .4rem;
 }
 
@@ -482,7 +457,7 @@ footer.footer .rights{
 }
 
 footer.footer .rights h4 a{
-    color: var(--white);
+    color: black;
 }
 
 footer.footer .move-up{
@@ -496,13 +471,11 @@ footer.footer .move-up span{
 }
 
 footer.footer .move-up span:hover{
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
 }
 
-/* ---------x------- Footer ----------x---------- */
 
-/*              Viewport less then or equal to 1130px            */
 
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info{
@@ -521,10 +494,7 @@ footer.footer .move-up span:hover{
 
 }
 
-/*      x       Viewport less then or equal to 1130px    x     */
 
-
-/*              Viewport less then or equal to 750px            */
 
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
@@ -546,10 +516,6 @@ footer.footer .move-up span:hover{
 }
 
 
-/*        x      Viewport less then or equal to 750px       x     */
-
-
-/*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px){
     main .blog{
@@ -574,4 +540,3 @@ footer.footer .move-up span:hover{
     }
 
 }
-
